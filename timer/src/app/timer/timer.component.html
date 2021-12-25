@@ -1,0 +1,9 @@
+<div class="timer">
+  <div class="timer__time-view">{{_seconds}} : {{_minutes}} : {{_hours}}</div>
+  <div class="timer__button-wrapper">
+    <button class="timer__button timer__button_start" (click)="start()">start</button>
+    <button class="timer__button timer__button_stop" (click)="stop()">stop</button>
+    <button class="timer__button timer__button_wait">wait</button>
+    <button class="timer__button timer__button_reset" (click)="reset()">reset</button>
+  </div>
+</div>

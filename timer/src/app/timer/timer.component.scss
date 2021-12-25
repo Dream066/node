@@ -1,0 +1,40 @@
+.timer {
+  width: 500px;
+  height: 500px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__time-view {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+  }
+
+  &__button {
+    display:  flex;
+    padding: 2 5px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+    font-size: 26px;
+    border-radius: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: blue;
+      border-color: blue;
+      color: #fff;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
